@@ -2,14 +2,16 @@ import React from "react";
 import { IoIosArrowBack } from "react-icons/io";
 
 import { Button } from "@/components";
-import { requirementData } from '@/constants'
+import { requirementData } from "@/constants";
 
 const Susidiaries = () => {
   return (
     <section className="py-16 px-4 lg:px-12">
       <div className="flex flex-col lg:flex-row w-full gap-6 lg:gap-8">
         <div className="w-full lg:w-2/5  flex flex-col gap-4 border-r-2">
-          <p className="flex items-center gap-2 text-xs pb-8"><IoIosArrowBack size={16} /> Back</p>
+          <p className="flex items-center gap-2 text-xs pb-8">
+            <IoIosArrowBack size={16} /> Back
+          </p>
           <div className="flex">
             <p className="text-xs p-2 bg-[#f0fdf4] text-[#166636] rounded-md">
               Full-Time
@@ -21,7 +23,7 @@ const Susidiaries = () => {
               Craft compelling narratives that showcase Ventsurely’s vision and
               portfolio.
             </p>
-          </div> 
+          </div>
           <span className="flex flex-col gap-2">
             <p className="font-semibold">LOCATION:</p>
             <p className="text-sm">Lagos, Nigeria</p>
@@ -50,18 +52,19 @@ const Susidiaries = () => {
           </div>
           <div className="flex flex-col gap-4">
             {requirementData.map((item, idx) => (
-                <div className="space-y-2" key={idx}>
+              <div className="space-y-2" key={idx}>
                 <h4 className="font-bold text-[20px]">{item.name}</h4>
-                {item.text && (
-                    <p>{item.text}</p>
-                )}
+                {item.text && <p>{item.text}</p>}
                 <ul className="flex flex-col gap-3">
-                    {item.qualifications.map((i, idx) => (
-                        <li key={idx} className="flex items-center gap-2 text-sm text-[#166636] border-l-2 border-[#166636] p-2 bg-[#f0fdf4]">
-                            <div className="h-[6px] w-[6px] rounded-full bg-[#166636]" />
-                            {i}
-                        </li>
-                    ))}
+                  {item.qualifications.map((i, idx) => (
+                    <li
+                      key={idx}
+                      className="flex items-center gap-2 text-sm text-[#166636] border-l-2 border-[#166636] p-2 bg-[#f0fdf4]"
+                    >
+                      <div className="h-[6px] w-[6px] rounded-full bg-[#166636]" />
+                      {i}
+                    </li>
+                  ))}
                 </ul>
               </div>
             ))}

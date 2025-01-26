@@ -46,7 +46,7 @@ const Contact = () => {
           <div className="flex h-full flex-col justify-center items-center w-full p-4 rounded-sm bg-[#e0e0e0]">
             <PiWarningCircleLight className="font-bold" size={32} /> 
             <p className="text-xs">
-              This site can't load Google Maps correctly
+              This site can&apos;t load Google Maps correctly
             </p>
             <p className="text-xs mt-6">Do you own this website?</p>
           </div>

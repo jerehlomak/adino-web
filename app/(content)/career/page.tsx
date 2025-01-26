@@ -18,7 +18,10 @@ const Career = () => {
             Explore Opportunities to Make an Impact with Adino.
           </p>
           <div className="mt-4 flex justify-center lg:justify-start">
-            <Button text="See open positions" styles="bg-white text-[#166636]" />
+            <Button
+              text="See open positions"
+              styles="bg-white text-[#166636]"
+            />
           </div>
         </div>
         <div className="w-full lg:w-3/5">
@@ -48,8 +51,12 @@ const Career = () => {
             <p className="text-sm text-[#87888a] uppercase tracking-wider">
               Key Benefit
             </p>
-            <h1 className="text-[24px] lg:text-[30px] font-semibold">Why Choose Adino?</h1>
-            <h1 className="text-[24px] lg:text-[30px] font-semibold">Here's What We Offer</h1>
+            <h1 className="text-[24px] lg:text-[30px] font-semibold">
+              Why Choose Adino?
+            </h1>
+            <h1 className="text-[24px] lg:text-[30px] font-semibold">
+              Here&apos;s What We Offer
+            </h1>
           </div>
           <p className="text-sm text-[#555] max-w-[400px] mt-4 lg:mt-0">
             Discover the perks and benefits that make Adino a great place to
@@ -97,14 +104,14 @@ const Career = () => {
                   Comprehensive Health Coverage
                 </h2>
                 <p className="text-sm text-[#87888a]">
-                Your health and well-being are our priority. We offer
-comprehensive health insurance plans, including
-medical, dental, and vision coverage, to ensure you
-and your family are well taken care of.
+                  Your health and well-being are our priority. We offer
+                  comprehensive health insurance plans, including medical,
+                  dental, and vision coverage, to ensure you and your family are
+                  well taken care of.
                 </p>
               </div>
             </div>
-            <div className="flex gap-4 flex-wrap justify-center lg:justify-start">    
+            <div className="flex gap-4 flex-wrap justify-center lg:justify-start">
               <Image
                 src="/images/career3.png"
                 alt="career"
@@ -129,14 +136,14 @@ and your family are well taken care of.
                   Flexible Work Environment
                 </h2>
                 <p className="text-sm text-[#87888a]">
-                Your health and well-being are our priority. We offer
-comprehensive health insurance plans, including
-medical, dental, and vision coverage, to ensure you
-and your family are well taken care of.
+                  Your health and well-being are our priority. We offer
+                  comprehensive health insurance plans, including medical,
+                  dental, and vision coverage, to ensure you and your family are
+                  well taken care of.
                 </p>
               </div>
             </div>
-            <div className="flex w-full lg:w-1/2 justify-center lg:justify-end">    
+            <div className="flex w-full lg:w-1/2 justify-center lg:justify-end">
               <Image
                 src="/images/career5.png"
                 alt="career"
@@ -154,10 +161,10 @@ and your family are well taken care of.
                   Professional Development
                 </h2>
                 <p className="text-sm text-[#87888a]">
-                We are committed to your growth. Take advantage of
-our professional development programs, including
-workshops, courses, and mentorship opportunities, to
-advance your skills and career.
+                  We are committed to your growth. Take advantage of our
+                  professional development programs, including workshops,
+                  courses, and mentorship opportunities, to advance your skills
+                  and career.
                 </p>
               </div>
             </div>
@@ -186,14 +193,14 @@ advance your skills and career.
                   Generous Paid Time Off
                 </h2>
                 <p className="text-sm text-[#87888a]">
-                We encourage our team to recharge and relax. Enjoy
-generous paid time off, including vacation days,
-holidays, and personal leave, to ensure you have the
-time you need for rest and rejuvenation.
+                  We encourage our team to recharge and relax. Enjoy generous
+                  paid time off, including vacation days, holidays, and personal
+                  leave, to ensure you have the time you need for rest and
+                  rejuvenation.
                 </p>
               </div>
             </div>
-            <div className="flex w-full lg:w-1/2 justify-center lg:justify-end">    
+            <div className="flex w-full lg:w-1/2 justify-center lg:justify-end">
               <Image
                 src="/images/career8.png"
                 alt="career"
@@ -207,15 +214,22 @@ time you need for rest and rejuvenation.
 
         <div className="flex flex-col gap-8 pt-12">
           <p>OPEN POSITIONS</p>
-          <h2 className="text-[30px] font-semibold">Shape the Future with Us</h2>
+          <h2 className="text-[30px] font-semibold">
+            Shape the Future with Us
+          </h2>
           <div className="flex flex-col gap-8">
             {careerData.map((data, idx) => (
               <div key={idx}>
                 <h2 className="text-[30px] font-semibold pb-4">{data.name}</h2>
                 {data.items.map((d, id) => (
-                  <div key={id} className="flex border-t-[1px] border-gray-300 py-8 w-full gap-8 justify-between items-center">
+                  <div
+                    key={id}
+                    className="flex border-t-[1px] border-gray-300 py-8 w-full gap-8 justify-between items-center"
+                  >
                     <h4 className="font-semibold">{d.title}</h4>
-                    <span className="text-sm bg-[#f0fdf4] text-[#166636] p-2 rounded-full">{d.time}</span>
+                    <span className="text-sm bg-[#f0fdf4] text-[#166636] p-2 rounded-full">
+                      {d.time}
+                    </span>
                     <p className="text-sm text-gray-400">{d.narration}</p>
                     <p className="text-sm font-semibold">{d.location}</p>
                   </div>
