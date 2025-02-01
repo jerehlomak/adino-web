@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import { RiArrowDropDownLine } from "react-icons/ri";
 import Image from "next/image";
 import Link from "next/link";
 import { LiaFacebookSquare } from "react-icons/lia";
@@ -49,24 +50,14 @@ const Navbar = () => {
             onMouseEnter={() => setDropdownOpen(true)}
             onMouseLeave={() => setDropdownOpen(false)}
           >
-            <span className="cursor-pointer hover:underline">More ⌄</span>
+            <span className="cursor-pointer flex items-center gap-1">More <RiArrowDropDownLine size={24} /></span>
             {dropdownOpen && (
-              <ul className="absolute left-0 mt-2 w-40 bg-white text-black shadow-lg rounded-md py-2">
-                <Link
-                  href="/team"
-                  className="block px-4 py-2 hover:bg-gray-100"
-                >
-                  Our Team
-                </Link>
-                <Link
-                  href="/investors"
-                  className="block px-4 py-2 hover:bg-gray-100"
-                >
-                  Investors
-                </Link>
-                <Link href="/faq" className="block px-4 py-2 hover:bg-gray-100">
-                  FAQ
-                </Link>
+              <ul className="absolute top-3 left-0 mt-2 w-40 bg-white text-black shadow-lg rounded-md py-2">
+                <Link href="/market" className="block px-4 py-2 hover:bg-gray-100">Market</Link>
+                <Link href="/asset-management" className="block px-4 py-2 hover:bg-gray-100">Asset Management</Link>
+                <Link href="/asset-partners" className="block px-4 py-2 hover:bg-gray-100">Asset Partners</Link>
+                <Link href="/capital" className="block px-4 py-2 hover:bg-gray-100">Capital</Link>
+                <Link href="/news2" className="block px-4 py-2 hover:bg-gray-100">News 2</Link>
               </ul>
             )}
           </div>
@@ -134,31 +125,13 @@ const Navbar = () => {
 
             {/* More Dropdown in Mobile */}
             <details className="group">
-              <summary className="cursor-pointer px-4 py-2 hover:bg-black list-none">
-                More ⌄
-              </summary>
+              <summary className="cursor-pointer px-4 py-2 hover:bg-black list-none flex items-center gap-2">More <RiArrowDropDownLine size={24} /></summary>
               <ul className="pl-4">
-                <Link
-                  onClick={() => setMenuOpen(false)}
-                  href="/team"
-                  className="block py-2 hover:bg-black px-4"
-                >
-                  Our Team
-                </Link>
-                <Link
-                  onClick={() => setMenuOpen(false)}
-                  href="/investors"
-                  className="block py-2 hover:bg-black px-4"
-                >
-                  Investors
-                </Link>
-                <Link
-                  onClick={() => setMenuOpen(false)}
-                  href="/faq"
-                  className="block py-2 hover:bg-black px-4"
-                >
-                  FAQ
-                </Link>
+                <Link href="/market" onClick={() => setMenuOpen(false)} className="block px-4 py-2 hover:bg-gray-100">Market</Link>
+                <Link href="/asset-management" onClick={() => setMenuOpen(false)} className="block px-4 py-2 hover:bg-gray-100">Asset Management</Link>
+                <Link href="/asset-partners" onClick={() => setMenuOpen(false)} className="block px-4 py-2 hover:bg-gray-100">Asset Partners</Link>
+                <Link href="/capital"  onClick={() => setMenuOpen(false)} className="block px-4 py-2 hover:bg-gray-100">Capital</Link>
+                <Link href="/news2"  onClick={() => setMenuOpen(false)} className="block px-4 py-2 hover:bg-gray-100">News 2</Link>
               </ul>
             </details>
           </ul>
