@@ -1,7 +1,7 @@
 import React from 'react'
 
 interface FormFieldProps {
-    labelName: string;
+    labelName?: string;
     placeholder: string;
     inputType?: string;
     isTextArea?: boolean;

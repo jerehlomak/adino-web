@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-import { Button } from "@/components";
+import { Button, FadingCarousel } from "@/components";
 import { careerData } from "@/constants";
 
 const Career = () => {
@@ -23,6 +23,7 @@ const Career = () => {
         </div>
         <div className="w-full lg:w-3/5">
           {/* Placeholder for future content or images */}
+          <FadingCarousel />
         </div>
       </div>
 
@@ -74,14 +75,14 @@ const Career = () => {
             </div>
             <div className="flex gap-4 flex-wrap justify-center lg:justify-start">
               <Image
-                src="/images/career1.png"
+                src="/images/item1.png"
                 alt="career"
                 width={200}
                 height={200}
                 className="h-[200px] w-[220px] object-cover rounded-md"
               />
               <Image
-                src="/images/career2.png"
+                src="/images/item2.png"
                 alt="career"
                 width={200}
                 height={200}
@@ -106,14 +107,14 @@ and your family are well taken care of.
             </div>
             <div className="flex gap-4 flex-wrap justify-center lg:justify-start">    
               <Image
-                src="/images/career3.png"
+                src="/images/item3.png"
                 alt="career"
                 width={200}
                 height={200}
                 className="h-[260px] w-[200px] object-cover rounded-md"
               />
               <Image
-                src="/images/career4.png"
+                src="/images/item4.png"
                 alt="career"
                 width={200}
                 height={200}
@@ -138,11 +139,11 @@ and your family are well taken care of.
             </div>
             <div className="flex w-full lg:w-1/2 justify-center lg:justify-end">    
               <Image
-                src="/images/career5.png"
+                src="/images/item5.png"
                 alt="career"
                 width={200}
                 height={200}
-                className="h-[240px] w-[80%] object-cover rounded-md"
+                className="h-[240px] w-[70%] object-cover rounded-md"
               />
             </div>
           </div>
@@ -163,14 +164,14 @@ advance your skills and career.
             </div>
             <div className="flex gap-4 flex-wrap justify-center lg:justify-start">
               <Image
-                src="/images/career6.png"
+                src="/images/item6.png"
                 alt="career"
                 width={200}
                 height={200}
                 className="h-[200px] w-[220px] object-cover rounded-md"
               />
               <Image
-                src="/images/career7.png"
+                src="/images/item7.png"
                 alt="career"
                 width={200}
                 height={200}
@@ -195,11 +196,11 @@ time you need for rest and rejuvenation.
             </div>
             <div className="flex w-full lg:w-1/2 justify-center lg:justify-end">    
               <Image
-                src="/images/career8.png"
+                src="/images/item8.png"
                 alt="career"
                 width={200}
                 height={200}
-                className="h-[240px] w-[80%] object-cover rounded-md"
+                className="h-[240px] w-[70%] object-cover rounded-md"
               />
             </div>
           </div>
