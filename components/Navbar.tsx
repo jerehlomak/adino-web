@@ -53,12 +53,12 @@ const Navbar = () => {
             <span className="cursor-pointer flex items-center gap-1">More <RiArrowDropDownLine size={24} /></span>
             {dropdownOpen && (
               <ul className="absolute top-3 left-0 mt-2 w-40 bg-white text-black shadow-lg rounded-md py-2">
-                <Link href="/market" className="block px-4 py-2 hover:bg-gray-100">Market</Link>
+                <Link href="/market" className="block px-4 py-2 hover:bg-gray-100">Market</Link> 
                 <Link href="/asset-management" className="block px-4 py-2 hover:bg-gray-100">Asset Management</Link>
                 <Link href="/asset-partners" className="block px-4 py-2 hover:bg-gray-100">Asset Partners</Link>
                 <Link href="/capital" className="block px-4 py-2 hover:bg-gray-100">Capital</Link>
                 <Link href="/news2" className="block px-4 py-2 hover:bg-gray-100">News 2</Link>
-              </ul>
+              </ul>    
             )}
           </div>
         </ul>
