@@ -1,3 +1,100 @@
+export const newData = [
+  {
+    topic: "Accusamus molestiae quibusdam omnis provident voluptatem necessitatibus et.",
+    sub_topic: null,
+    details: "Quas magni velit aspernatur consectetur recusandae omnis. Harum provident alias omnis deserunt rem quia voluptatem. Qui voluptatem accusantium. Quo et natus alias et. Maiores eos officia accusantium ut nulla veniam deserunt est cupiditate. Iste molestias deserunt velit maxime.",
+  },
+  {
+    topic: "Repellendus voluptas nostrum reprehenderit ducimus est non alias.",
+    sub_topic: "Dolor nihil ut nihil dolor. Blanditiis possimus quam non sint. Sunt atque eligendi ex deserunt aliquid.",
+    details: "Voluptates quas voluptatem reiciendis et distinctio dolorem. Dignissimos ab ipsa ratione. Ab velit perferendis aut doloribus quibusdam. In cumque dolore qui dolorem quos in. Sit rerum est facilis architecto. Laudantium sequi quis ut iste reiciendis laboriosam aut.",
+  },
+  {
+    topic: "Eos repellat occaecati blanditiis est.",
+    sub_topic: null,
+    details: "Accusamus atque illo earum accusamus eveniet possimus. Consequatur illum sit vel dolore perferendis iste. Totam nihil nihil et asperiores. Illum voluptas earum saepe ullam doloremque provident ut illum ipsum. Est amet ducimus qui. Earum itaque id.",
+  },
+  {
+    topic: "Optio velit ut reprehenderit ea dignissimos quia nesciunt.",
+    sub_topic: "Tempore laboriosam sint aut atque ipsum cupiditate. Sunt qui exercitationem officia ab omnis distinctio. Recusandae tempore accusamus. Modi consectetur ducimus nihil non sit. Sunt harum dolores occaecati rerum magnam autem fuga non cum.",
+    details: "Voluptates quas voluptatem reiciendis et distinctio dolorem. Dignissimos ab ipsa ratione. Ab velit perferendis aut doloribus quibusdam. In cumque dolore qui dolorem quos in. Sit rerum est facilis architecto. Laudantium sequi quis ut iste reiciendis laboriosam aut.",
+  },
+  {
+    topic: "Accusamus molestiae quibusdam omnis provident voluptatem necessitatibus et.",
+    sub_topic: null,
+    details: "Quas magni velit aspernatur consectetur recusandae omnis. Harum provident alias omnis deserunt rem quia voluptatem. Qui voluptatem accusantium. Quo et natus alias et. Maiores eos officia accusantium ut nulla veniam deserunt est cupiditate. Iste molestias deserunt velit maxime.",
+  }
+]
+
+export const serviceData = [
+  {
+    name: "Project Management",
+    desc: "Offering end-to-end project management services, ensuring projects are delivered on time, within budget, and to the highest quality standards.",
+  },
+  {
+    name: "Feasibility Status",
+    desc: "Conducting detailed feasibility studies to assess the viability of proposed projects, helping clients make informed decisions before committing to construction.",
+  },
+  {
+    name: "Debt Management",
+    desc: "Conducting detailed feasibility studies to assess the viability of proposed projects, helping clients make informed decisions before committing to construction.",
+  },
+  {
+    name: "Urban Planning",
+    desc: "Providing comprehensive urban planning services, focusing on sustainable development, effective land use, and the creation of vibrant, livable communities.",
+  },
+]
+
+export const clientData = [
+  {
+    name: 'Cameron Williamson', 
+    image: '/images/client1.png',
+    text: 'Their expertise in navigating complex financial landscapes has given me the confidence I needed to make informed decisions. I be happier with the results!',
+    location: 'Dallas, USA',
+  },
+  {
+    name: 'Esther Howards',
+    image: '/images/client2.png',
+    text: 'Their transparency to integrity made the entire process smooth. Thanks to their guidance, I have successfully reached my retirement savings goals ahead.',
+    location: 'Miami, USA',
+  },
+  {
+    name: 'Jacob John',
+    image: '/images/client3.png',
+    text: 'Their communication is always available to answer my questions & updates on my investments. I feel secure knowing that my finances are in such capable.',
+    location: 'Miami, USA',
+  },
+  {
+    name: 'Esther Howards',
+    image: '/images/client1.png',
+    text: 'Adino stepped in and provided invaluable support. They helped me develop a robust financial strategy that not only improved my cash flow.',
+    location: 'Dallas, USA',
+  },
+]
+
+export const marketData = [
+  {
+    header: "Debt Management",
+    desc: "By focusing on budgeting, expense tracking, and debt reduction strategies, we empower you to reduce financial stress and regain control.",
+    url: "",
+  },
+  {
+    header: "Financial Planning",
+    desc: "We work with you to create a strategic plan that addresses budgeting, investment, tax optimization, and risk management.",
+    url: "",
+  },
+  {
+    header: "Business Financial Consulting",
+    desc: "Optimize your company's financial health with our expert consulting services, designed to improve cash flow, profitability, and growth.",
+    url: "",
+  },
+  {
+    header: "Investment Advisory",
+    desc: "We offer expert investment advice, helping you build diversified portfolios that align with your financial goals and risk tolerance for optimal returns.",
+    url: "",
+  },
+] 
+
 export const gridData = [
   {
     title: "CREATIVITY",

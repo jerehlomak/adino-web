@@ -1,48 +1,37 @@
 "use client";
 
 import React, { useState } from "react";
-import { RiArrowDropDownLine } from "react-icons/ri";
 import Image from "next/image";
 import Link from "next/link";
 import { LiaFacebookSquare } from "react-icons/lia";
+import { RiArrowDropDownLine } from "react-icons/ri";
 import { AiOutlineLinkedin } from "react-icons/ai";
 import { IoLogoInstagram } from "react-icons/io5";
 import { HiOutlineMenu, HiX } from "react-icons/hi";
 
-const Navbar = () => {
+const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   return (
-    <nav className="border-[1px] border-[#e5e5e5]">
-      <div className="relative w-full flex items-center justify-between py-2 px-4 lg:px-12">
-        <Link href="/">
-          <Image
-            src="/images/logo1.png"
-            alt="logo"
-            width={120}
-            height={120}
-            className="object-cover cursor-pointer"
-          />
-        </Link>
+    <>
+      <nav className="flex items-center justify-between">
+        {/* Logo */}
+        <Image
+          src="/images/logo.png"
+          alt="logo"
+          width={120}
+          height={120}
+          className="object-cover cursor-pointer"
+        />
 
         {/* Desktop Menu */}
-        <ul className="hidden lg:flex py-4 px-8 gap-8 text-black text-sm">
-          <Link href="/about" className="cursor-pointer">
-            About
-          </Link>
-          <Link href="/career" className="cursor-pointer">
-            Careers
-          </Link>
-          <Link href="/news" className="cursor-pointer">
-            News
-          </Link>
-          <Link href="/subsidiaries" className="cursor-pointer">
-            Subsidiaries +
-          </Link>
-          <Link href="/contact" className="cursor-pointer">
-            Contact
-          </Link>
+        <ul className="hidden lg:flex px-8 gap-8 text-white text-sm">
+          <Link href="/about" className="cursor-pointer">About</Link>
+          <Link href="/career" className="cursor-pointer">Careers</Link>
+          <Link href="/news" className="cursor-pointer">News</Link>
+          <Link href="/subsidiaries" className="cursor-pointer">Subsidiaries +</Link>
+          <Link href="/contact" className="cursor-pointer">Contact</Link>
 
           {/* More Dropdown */}
           <div
@@ -64,64 +53,31 @@ const Navbar = () => {
         </ul>
 
         {/* Mobile Menu Button */}
-        <button
-          className="block lg:hidden text-[#166636] text-2xl"
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
+        <button className="lg:hidden text-white text-2xl" onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? <HiX /> : <HiOutlineMenu />}
         </button>
 
         {/* Desktop Social Icons */}
         <div className="hidden lg:flex gap-8 items-center">
-          <LiaFacebookSquare size={28} color="#166636" />
-          <AiOutlineLinkedin size={24} color="#166636" />
-          <IoLogoInstagram size={24} color="#166636" />
+          <LiaFacebookSquare size={28} color="white" />
+          <AiOutlineLinkedin size={24} color="white" />
+          <IoLogoInstagram size={24} color="white" />
         </div>
-      </div>
+      </nav>
 
       {/* Mobile Menu */}
       <div className="lg:hidden flex justify-between items-center relative">
         <div
-          className={`absolute top-[0px] left-0 right-0 bg-[#166636] z-10 shadow-secondary py-4 ${
+          className={`absolute top-[20px] left-0 right-0 bg-[#166636] z-10 shadow-secondary py-4 transition-all duration-700 ${
             !menuOpen ? "-translate-y-[100vh]" : "translate-y-0"
-          } transition-all duration-700`}
+          }`}
         >
           <ul className="flex flex-col gap-4 text-sm p-4 text-[#fff]">
-            <Link
-              onClick={() => setMenuOpen(false)}
-              href="/about"
-              className="cursor-pointer hover:bg-black px-4 py-2"
-            >
-              About
-            </Link>
-            <Link
-              onClick={() => setMenuOpen(false)}
-              href="/career"
-              className="cursor-pointer hover:bg-black px-4 py-2"
-            >
-              Careers
-            </Link>
-            <Link
-              onClick={() => setMenuOpen(false)}
-              href="/news"
-              className="cursor-pointer hover:bg-black px-4 py-2"
-            >
-              News
-            </Link>
-            <Link
-              onClick={() => setMenuOpen(false)}
-              href="/subsidiaries"
-              className="cursor-pointer hover:bg-black px-4 py-2"
-            >
-              Subsidiaries +
-            </Link>
-            <Link
-              onClick={() => setMenuOpen(false)}
-              href="/contact"
-              className="cursor-pointer hover:bg-black px-4 py-2"
-            >
-              Contact
-            </Link>
+            <Link href="/about" onClick={() => setMenuOpen(false)} className="cursor-pointer hover:bg-black px-4 py-2">About</Link>
+            <Link href="/career" onClick={() => setMenuOpen(false)} className="cursor-pointer hover:bg-black px-4 py-2">Careers</Link>
+            <Link href="/news" onClick={() => setMenuOpen(false)} className="cursor-pointer hover:bg-black px-4 py-2">News</Link>
+            <Link href="/subsidiaries" onClick={() => setMenuOpen(false)} className="cursor-pointer hover:bg-black px-4 py-2">Subsidiaries +</Link>
+            <Link href="/contact" onClick={() => setMenuOpen(false)} className="cursor-pointer hover:bg-black px-4 py-2">Contact</Link>
 
             {/* More Dropdown in Mobile */}
             <details className="group">
@@ -144,8 +100,8 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-    </nav>
+    </>
   );
 };
-
-export default Navbar;
+export default Header;
+        
