@@ -65,7 +65,7 @@ const Partners = () => {
                 align with your unique goals.
               </p>
               <p>
-                Whether you're looking to expand your business, optimize your
+                Whether you&apos;re looking to expand your business, optimize your
                 financial operations, or navigate complex mergers and
                 acquisitions, Adino Partners is your trusted advisor every step
                 of the way.
@@ -77,7 +77,7 @@ const Partners = () => {
                 align with your unique goals.
               </p>
               <p>
-                Whether you're looking to expand your business, optimize your
+                Whether you&apos;re looking to expand your business, optimize your
                 financial operations, or navigate complex mergers and
                 acquisitions, Adino Partners is your trusted advisor every step
                 of the way.

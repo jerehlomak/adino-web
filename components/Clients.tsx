@@ -17,8 +17,8 @@ const Clients = () => {
           <div className="w-full lg:w-2/3 rounded-[24px] bg-[#f0fdf4] p-8 h-[360px] flex flex-col justify-end">
             <div className="flex flex-col gap-4">
               <p className="text-[24px] text-[#166636] max-w-[600px]">
-                "With Adino support, we streamlined cash flow and gained
-                insights. Their team feels like a true partner."
+              &quot;With Adino support, we streamlined cash flow and gained
+                insights. Their team feels like a true partner.&quot;
               </p>
               <span className="flex gap-2 items-center text-[#166636]">
                 <p className="text-sm font-semibold">Sarah Mitchell</p>-
@@ -30,8 +30,8 @@ const Clients = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <div className="rounded-[24px] bg-[#f0fdf4] h-[220px] p-8 flex flex-col gap-4 justify-end">
             <p className="text-[16px] text-[#166636]">
-              "With Adino support, we streamlined cash flow and gained insights.
-              Their team feels like a true partner."
+            &quot;With Adino support, we streamlined cash flow and gained insights.
+              Their team feels like a true partner.&quot;
             </p>
             <span className="flex gap-2 items-center text-[#166636]">
               <p className="text-sm font-semibold">James Carter</p>-
@@ -40,8 +40,8 @@ const Clients = () => {
           </div>
           <div className="rounded-[24px] bg-[#f0fdf4] h-[220px] p-8 flex flex-col gap-4 justify-end">
             <p className="text-[16px] text-[#166636]">
-              "With Adino support, we streamlined cash flow and gained insights.
-              Their team feels like a true partner."
+            &quot;With Adino support, we streamlined cash flow and gained insights.
+              Their team feels like a true partner.&quot;
             </p>
             <span className="flex gap-2 items-center text-[#166636]">
               <p className="text-sm font-semibold">Linda Rodriguez</p>-
@@ -50,8 +50,8 @@ const Clients = () => {
           </div>
           <div className="rounded-[24px] bg-[#f0fdf4] h-[220px] p-8 flex flex-col gap-4 justify-end">
             <p className="text-[16px] text-[#166636]">
-              "With Adino support, we streamlined cash flow and gained insights.
-              Their team feels like a true partner."
+            &quot;With Adino support, we streamlined cash flow and gained insights.
+              Their team feels like a true partner.&quot;
             </p>
             <span className="flex gap-2 items-center text-[#166636]">
               <p className="text-sm font-semibold">David Thompson</p>-

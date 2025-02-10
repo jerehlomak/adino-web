@@ -26,10 +26,10 @@ const NewsLetter = () => {
           </span>
         </div>
         <h1 className="text-[25px] lg:text-[40px] mt-4 font-semibold pb-4 leading-[2rem]">
-          Let's Talk
+          Let&apos;s Talk
         </h1>
         <p className="max-w-[420px]">
-          Reach out for inquiries, collaborations, or just to say hello. We're
+          Reach out for inquiries, collaborations, or just to say hello. We&apos;re
           eager to connect!
         </p>
         <div className="mt-4 space-y-4">

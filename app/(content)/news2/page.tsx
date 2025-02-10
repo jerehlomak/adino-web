@@ -96,13 +96,14 @@ const NewsDetails = ({ params }: { params: any }) => {
         <h1 className="text-3xl font-semibold">Related post</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-4">
           {newsData.slice(0,4).map((news, index) => (
-            <NewsCard
-              id={index}
-              description={news.description}
-              category={news.category}
-              imageSrc={news.imageSrc}
-              title={news.title}
-            />
+              <NewsCard
+                key={index}
+                id={index}
+                description={news.description}
+                category={news.category}
+                imageSrc={news.imageSrc}
+                title={news.title}
+              />
           ))}
         </div>
       </div>
