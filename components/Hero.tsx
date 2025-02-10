@@ -72,7 +72,7 @@ const Hero = () => {
 
       <div className="flex flex-col items-center justify-center gap-4 text-white text-center mt-8 lg:mt-0 translate-y-1/2 lg:translate-y-0">
         <h1 className="text-[2.5rem] max-w-[500px]">
-          Driving Tomorrow's Opportunity
+          Driving Tomorrow&apos;s Opportunity
         </h1>
         <button className="flex items-center gap-4 rounded-full px-6 py-3 bg-[#49554f]">
           Discover Adino

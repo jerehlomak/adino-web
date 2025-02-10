@@ -111,7 +111,7 @@ const page = () => {
             <span className="text-[40px] text-[#cefe85] pt-4">
               65
             </span>
-            <p className="text-sm">IPO'S Portfolio</p>
+            <p className="text-sm">IPO&apos;S Portfolio</p>
           </div>
           <div className="flex flex-col">
             <div className="w-full h-[1px] bg-gray-300" />

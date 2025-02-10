@@ -26,6 +26,7 @@ const page = () => {
         <div className='max-w-[85%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-4'>
           {newsData.map((news, index) => (
             <NewsCard 
+              key={index}
               id={index}
               description={news.description}
               category={news.category}
