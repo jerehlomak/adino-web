@@ -23,7 +23,7 @@ const Partners = () => {
           <h1 className="text-3xl lg:text-5xl font-semibold">Adino Partners</h1>
           <div className="flex gap-4">
             <div className="h-full w-[1px] bg-[#fff]" />
-            <p className="max-w-[600px]">
+            <p className="max-w-[600px] text-start">
               Unlock global financial opportunities with Adino Asset Management.
               We provide comprehensive market analysis, trading strategies, and
               investment solutions to help you navigate the complexities of the

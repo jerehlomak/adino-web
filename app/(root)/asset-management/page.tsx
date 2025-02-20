@@ -23,7 +23,7 @@ const AssetManagement = () => {
           <h1 className="text-5xl font-semibold">Adino Asset Management</h1>
           <div className="flex gap-4">
             <div className="h-full w-[1px] bg-[#fff]" />
-            <p className="max-w-[600px]">
+            <p className="max-w-[600px] text-start">
               Unlock global financial opportunities with Adino Asset Management.
               We provide comprehensive market analysis, trading strategies, and
               investment solutions to help you navigate the complexities of the
@@ -39,7 +39,7 @@ const AssetManagement = () => {
       </section>
 
       {/* About section */}
-      <div className="px-4 lg:px-12 py-16 flex flex-col gap-8">
+      <div className="px-4 lg:px-12 pt-12 lg:py-16 flex flex-col gap-8">
         <div className="flex items-center gap-8 lg:gap-16">
           <p className="text-sm font-semibold whitespace-nowrap">ABOUT US</p>
           <div className="w-full bg-[#e7e4e4] h-[3px]" />
@@ -85,10 +85,10 @@ const AssetManagement = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> 
 
       {/* Services Section */}
-      <div className="px-4 lg:px-12 py-16 flex flex-col gap-8">
+      <div className="px-4 lg:px-12 py-8 lg:py-16 flex flex-col gap-8">
         <div className="flex items-center gap-8 lg:gap-16">
           <p className="text-sm font-semibold whitespace-nowrap">WHAT WE DO</p>
           <div className="w-full bg-[#e7e4e4] h-[3px]" />

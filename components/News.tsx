@@ -4,7 +4,7 @@ import { newsData } from '@/constants'
 
 const News = () => {
   return (
-    <section className="py-8 space-y-8">
+    <section className="py-8 space-y-8 px-4 lg:px-12">
       <p>NEWS & UPDATES</p>
       <div className='flex justify-between items-end'>
         <h1 className='text-[32px] md:text-[44px] lg:text-[60px] max-w-[500px] leading-[32px] lg:leading-[4rem]'>Discover Our Latest Insights.</h1>

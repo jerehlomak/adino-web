@@ -32,7 +32,7 @@ const Testimonial: React.FC = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 2000,
+    speed: 1000,
     autoplaySpeed: 3000,
     cssEase: "linear",
     initialSlide: 0,
@@ -63,7 +63,7 @@ const Testimonial: React.FC = () => {
       <Slider {...settings}>
         {clientData.map((item, index) => (
           <div key={index} className="px-4">
-            <div className="bg-[#f7f7f7] flex flex-col justify-between h-[220px] gap-6 p-8 rounded-lg transition duration-300">
+            <div className="bg-[#f7f7f7] flex flex-col justify-between h-[220px gap-6 p-8 rounded-lg transition duration-300">
               <p className="text-gray-700 text-sm leading-6 tracking-wide">{item.text}</p>
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-full overflow-hidden border border-gray-300">

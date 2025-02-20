@@ -8,9 +8,9 @@ const page = () => {
     <section className="py-12 flex flex-col gap-8 lg:gap-16">
       <div className="px-4 lg:px-12 flex flex-col lg:flex-row gap-4 lg:justify-between items-start lg:items-end">
         <h1 className="text-[30px] lg:text-[40px] leading-[2rem] lg:leading-[3.5rem]">
-          Venture with Confidence, <br /> Thrive with Adino
+          Venture with Confidence, <br className="hidden lg:block" /> Thrive with Adino
         </h1>
-        <div className="flex items-center gap-8">
+        <div className="flex items-center flex-wrap gap-4 lg:gap-8">
           <span className="flex flex-col gap-2">
             <p>FOUNDED IN</p>
             <p className="font-bold">2020</p>
@@ -90,7 +90,7 @@ const page = () => {
       <div className="w-full bg-[#166636] py-16">
         <div className="flex flex-col gap-4 px-4 lg:px-12 text-gray-300">
         <h6>OUR INSIGHTS</h6>
-        <h2 className="text-[40px] leading-[3rem]">A Journey of Innovation <br /> and Success</h2>
+        <h2 className="text-[30px] leading-[30px] lg:text-[40px] lg:leading-[40px]">A Journey of Innovation <br /> and Success</h2>
         <div className="my-4 grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-16">
           <div className="flex flex-col">
             <div className="w-full h-[1px] bg-gray-300" />
@@ -131,13 +131,13 @@ const page = () => {
 
       <div className="px-4 lg:px-12 py-8 flex flex-col gap-8">
         <h6>COMPANY VALUES</h6>
-        <h2 className="text-[30px] lg:text-[40px] leading-[3rem]">Unveiling the Core Values <br /> at Adino</h2>
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-12">
+        <h2 className="text-[30px] lg:text-[40px] leading-[3rem]">Unveiling the Core Values <br className="hidden lg:block" /> at Adino</h2>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-12">
           {gridData.map((item, index) => (
             <div
               key={index}
               style={{ backgroundColor: item.bgColor }}
-              className={`h-[400px] flex flex-col justify-between p-8 rounded-md`}
+              className={`h-[260px] lg:h-[400px] flex flex-col justify-between p-8 rounded-md`}
             >
               <p style={{ color: item.textColor }} className={`text-sm font-semibold ${item.bgColor}`}>{item.title}</p>
               <p style={{ color: item.textColor }} className={`text-sm text-[#17171a]`}>{item.content}</p> 

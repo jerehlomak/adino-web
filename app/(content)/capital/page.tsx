@@ -8,7 +8,7 @@ const Capital = () => {
       <div className="px-4 lg:px-12 w-full flex flex-col lg:flex-row gap-12 justify-between">
         <div className="w-full lg:w-1/2 bg-[#f0fdf4] text-[#166636] p-8 rounded-[32px] flex flex-col justify-between gap-4">
           <h1 className="text-2xl lg:text-5xl font-semibold">
-            Adino <br /> Capital
+            Adino <br className="hidden lg:block" /> Capital
           </h1>
           <p>
             Unlock global financial opportunities with Adino Capital. We provide
@@ -16,17 +16,17 @@ const Capital = () => {
             solutions to help you navigate the complexities of the global
             market.
           </p>
-          <div className="flex items-center justify-between">
+          <div className="flex items-center gap-4 flex-wrap justify-between">
             <span className="flex flex-col gap-2 text-[#166636]">
-              <h4 className="text-[35px] font-semibold">2x</h4>
+              <h4 className="text-[26px] lg:text-[35px] font-semibold">2x</h4>
               <small>Clarity in 30 Days</small>
             </span>
             <span className="flex flex-col gap-2 text-[#166636]">
-              <h4 className="text-[35px] font-semibold">50%</h4>
+              <h4 className="text-[26px] lg:text-[35px] font-semibold">50%</h4>
               <small>Less Bookkeeping</small>
             </span>
             <span className="flex flex-col gap-2 text-[#166636]">
-              <h4 className="text-[35px] font-semibold">20%</h4>
+              <h4 className="text-[26px] lg:text-[35px] font-semibold">20%</h4>
               <small>More Cash Flow</small>
             </span>
           </div>
@@ -91,7 +91,7 @@ const Capital = () => {
             </div>
             <h1 className="text-4xl font-semibold">Our Solutions</h1>
             <div className="flex gap-4 py-4">
-              <h4 className="text-5xl font-semibold text-[#666666]">01</h4>
+              <h4 className="text-3xl lg:text-4xl xl:text-5xl font-semibold text-[#666666]">01</h4>
               <span className="flex flex-col gap-2">
                 <p className="text-[20px] font-semibold">
                   Personal Finance Strategies
@@ -104,7 +104,7 @@ const Capital = () => {
               </span>
             </div>
             <div className="flex gap-4 py-4">
-              <h4 className="text-5xl font-semibold text-[#666666]">02</h4>
+              <h4 className="text-3xl lg:text-4xl xl:text-5xl font-semibold text-[#666666]">02</h4>
               <span className="flex flex-col gap-2">
                 <p className="text-[20px] font-semibold">
                   Business Finance Management

@@ -1,5 +1,9 @@
+"use client"
+
 import React from "react";
 import Image from "next/image";
+import ScrollAnimation from "react-animate-on-scroll"
+import "animate.css/animate.compat.css"
 
 import { Button, FadingCarousel } from "@/components";
 import { careerData } from "@/constants";
@@ -7,7 +11,9 @@ import { careerData } from "@/constants";
 const Career = () => {
   return (
     <section className="py-16">
+      
       <div className="px-4 lg:px-12 flex flex-col lg:flex-row items-center gap-8 h-full lg:h-[60vh]">
+        
         <div className="w-full lg:w-2/5 flex flex-col gap-4 text-center lg:text-left">
           <p className="text-sm text-[#87888a] tracking-wider">CAREERS</p>
           <h1 className="text-[25px] lg:text-[40px] lg:leading-[3rem] font-bold">
@@ -30,6 +36,7 @@ const Career = () => {
         </div>
       </div>
 
+      {/* <ScrollAnimation animateIn="fadeInUp" duration={1} delay={100} animateOnce={true}> */}
       <div className="bg-[#f4f4f5] p-6 lg:p-12 mt-8 flex flex-wrap gap-8 justify-between items-center">
         {[
           { title: "Global Team Member", value: "500+" },
@@ -45,8 +52,10 @@ const Career = () => {
           </div>
         ))}
       </div>
-
+      {/* </ScrollAnimation> */}
+      
       <div className="px-4 lg:px-12 py-8">
+      <ScrollAnimation animateIn="fadeInUp" animateOnce={false}>
         <div className="flex flex-col lg:flex-row justify-between lg:items-end py-8">
           <div className="flex flex-col">
             <p className="text-sm text-[#87888a] uppercase tracking-wider">
@@ -64,7 +73,8 @@ const Career = () => {
             work and grow your career.
           </p>
         </div>
-
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="fadeInUp" animateOnce={false}> 
         <div className="bg-[#f6f6f6] p-6 lg:p-8 flex flex-col gap-12 rounded-md">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div className="flex flex-col gap-6">
@@ -212,7 +222,8 @@ const Career = () => {
             </div>
           </div>
         </div>
-
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="fadeInUp" animateOnce={false}> 
         <div className="flex flex-col gap-8 pt-12">
           <p>OPEN POSITIONS</p>
           <h2 className="text-[30px] font-semibold">
@@ -239,8 +250,10 @@ const Career = () => {
             ))}
           </div>
         </div>
+        </ScrollAnimation>
       </div>
-    </section>
+     
+    </section> 
   );
 };
 
