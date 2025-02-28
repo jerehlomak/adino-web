@@ -153,7 +153,7 @@ const Career = () => {
               <Image
                 src="/images/item5.png"
                 alt="career"
-                width={200}
+                width={201}
                 height={200}
                 className="h-[350px] w-full lg:w-[502px] object-cover rounded-md"
               />
