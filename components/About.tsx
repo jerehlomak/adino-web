@@ -9,12 +9,12 @@ const About = () => {
   return (
     <div className="flex flex-col justify-between items-center gap-8 px-4 lg:px-12 py-16 text-center">
       <p>ABOUT US</p>
-      <h1 className="text-[3rem]">Introducing Adino.</h1>
-      <p className="max-w-[770px]">
+      <h1 className="text-[48px] leading-[48px] lg:text-[64px] lg:leading-[64px]">Introducing Adino.</h1>
+      <p className="max-w-[607px] text-[18px]">
         Adino Investment Limited is an Investment holding company. We hold principal investments in the financial and non-financial markets. We manage and optimize these investments, and our commitment to value enables us to exceed expectations.
       </p>
       <Button text="How we invest" styles="bg-white text-[#166636]" />
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
         {statsData.map((item) => (
           <div
             key={item.id}

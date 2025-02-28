@@ -9,28 +9,28 @@ const Susidiaries = () => {
     <section className="py-16 px-4 lg:px-12">
       <div className="flex flex-col lg:flex-row w-full gap-6 lg:gap-8">
         <div className="w-full lg:w-2/5  flex flex-col gap-4 border-r-2">
-          <p className="flex items-center gap-2 text-xs pb-8">
+          <p className="flex items-center gap-2 text-[18px] font-lato text-[#08090a] pb-8">
             <IoIosArrowBack size={16} /> Back
           </p>
           <div className="flex">
-            <p className="text-xs p-2 bg-[#f0fdf4] text-[#166636] rounded-md">
+            <p className="text-[18px] font-lato p-2 bg-[#f0fdf4] text-[#166636] rounded-md">
               Full-Time
             </p>
           </div>
           <div className="max-w-[400px]">
-            <h1 className="text-[40px]">Adino Capital Partner</h1>
-            <p>
+            <h1 className="text-[48px] leading-[1.25] tracking-[-0.48px] text-[#181818] font-sequel">Adino Capital Partner</h1>
+            <p className="font-lato text-[18px] leading-[1.67] text-[#666]">
               Craft compelling narratives that showcase Ventsurely’s vision and
               portfolio.
             </p>
           </div>
           <span className="flex flex-col gap-2">
-            <p className="font-semibold">LOCATION:</p>
-            <p className="text-sm">Lagos, Nigeria</p>
+            <p className="font-sequel text-[20px] leading-[1.25]">LOCATION:</p>
+            <p className="font-lato text-[16px] leading-[1.67] text-[#666]">Lagos, Nigeria</p>
           </span>
           <span>
-            <p className="font-semibold">DEPARTMENT:</p>
-            <p className="text-sm">Investment</p>
+            <p className="font-sequel text-[20px] leading-[1.25]">DEPARTMENT:</p>
+            <p className="font-lato text-[16px] leading-[1.67] text-[#666]">Investment</p>
           </span>
           <div>
             <Button text="Apply now" styles="bg-white text-[#166636]" />
@@ -39,8 +39,8 @@ const Susidiaries = () => {
         <div className="h-full w-[2px] bg-[#f0fdf4]" />
         <div className="w-full lg:w-3/5 flex flex-col gap-6 max-w-[600px]">
           <div className="space-y-2">
-            <h4 className="font-bold text-[20px]">Job Summary</h4>
-            <p className="text-sm">
+            <h4 className=" text-[24px] font-sequel">Job Summary</h4>
+            <p className="font-lato text-[18px] leading-[1.67] text-[#666]">
               We are looking for a passionate and creative Capital Partner to
               lead our marketing efforts at Adino. The ideal candidate will
               develop and execute multi-channel marketing campaigns to drive
@@ -53,15 +53,15 @@ const Susidiaries = () => {
           <div className="flex flex-col gap-4">
             {requirementData.map((item, idx) => (
               <div className="space-y-2" key={idx}>
-                <h4 className="font-bold text-[20px]">{item.name}</h4>
-                {item.text && <p>{item.text}</p>}
+                <h4 className="font-sequel text-[24px] leading-[1.25]">{item.name}</h4>
+                {item.text && <p className="font-lato text-[18px] leading-[1.67] text-[#666]">{item.text}</p>}
                 <ul className="flex flex-col gap-3">
                   {item.qualifications.map((i, idx) => (
                     <li
                       key={idx}
-                      className="flex items-center gap-2 text-sm text-[#166636] border-l-2 border-[#166636] p-2 bg-[#f0fdf4]"
+                      className="flex items-center gap-2 text-[18px] font-lato text-[#166636] border-l-2 border-[#166636] p-2 bg-[#f0fdf4]"
                     >
-                      <div className="h-[6px] w-[6px] rounded-full bg-[#166636]" />
+                      <div className="h-[6px] w-[6px] rounded-full bg-[#166636] leading-[1.67]" />
                       {i}
                     </li>
                   ))}
